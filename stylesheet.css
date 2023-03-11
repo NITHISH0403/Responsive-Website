@@ -16,7 +16,7 @@
     cursor: pointer;
 }
 #exit h1{
-    font-family: "Arial Rounded MT";
+    font-family: "Arial Rounded MT", Arial, sans-serif;
     color: orange;
 }
 #exit{
