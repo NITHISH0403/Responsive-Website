@@ -152,7 +152,7 @@
     <script>
         function openImg(n){
             let selectImage = n;
-            let image = selectImage.src.split("/")[4];
+            let image = selectImage.src.split("/")[10];
             console.log(image);
             document.getElementById("sltimage").src = image;
             document.getElementById("overlay").style.display = "block";
