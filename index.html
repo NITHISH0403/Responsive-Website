@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Layout</title>
+    <link rel="StyleSheet" href="stylesheet.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <div class="root">
+        <div id="menu" onclick="show()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="exit" onclick="hide()">
+            <h1>X</h1>
+        </div>
+        <!-- header of the Page -->
+        <div class="header">
+            <div class="head">
+                <header>
+                    <h1 id="logo">Quick Learn</h1>
+                    <nav>
+                        <ul id="nav">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">TUTORIALS</a></li>
+                            <li><a href="#">REFERENCES</a></li>
+                            <li><a href="#">EXERCISES</a></li>
+                            <li><a href="#" id="register">REGISTER</a></li>
+                            <li><a href="#" id="login">LOG IN</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>    
+            <div id="info">
+                <p>Learn to Code &<br><span id="highlight">Development</span><br>Course</p>
+                <p id="content">Quick Learn is optimized for learning, testing, and training.  Examples might be simplified to improve reading and basic understanding.  Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</p>
+            </div>
+        </div>
+        <!-- Content of the Page -->
+        <div class="body">
+            <h1>Learn to Code</h1>
+            <h2>With the world's largest web developer site.</h2>
+            <div class="image">
+                <img alt="web App Development" src="pexels-pixabay-147413.jpg" onclick="openImg(this)">
+                <p class="cost">$295.00</p>
+                <p>Learn web Application Development</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="Frontend Development" src="pexels-pixabay-270366.jpg" height="150px" onclick="openImg(this)">
+                <p class="cost">$190.00</p>
+                <p>Learn Frontend<br>Development</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="Data Analytics" src="pexels-lukas-590016.jpg" onclick="openImg(this)">
+                <p class="cost">$190.00</p>
+                <p>Data<br>Analytics</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="web Design" src="pexels-tranmautritam-326503.jpg" height="150px" onclick="openImg(this)">
+                <p class="cost">$140.00</p>
+                <p>Web<br>Design</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="HTML" src="pexels-realtoughcandycom-11035371.jpg" height="150px" onclick="openImg(this)">
+                <p class="cost">$95.00</p>
+                <p>Learn HTML</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="CSS" src="pexels-realtoughcandycom-11035386.jpg" height="150px" onclick="openImg(this)">
+                <p class="cost">$95.00</p>
+                <p>Learn CSS</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="JavaScript" src="pexels-markus-spiske-1089440.jpg" height="150px" onclick="openImg(this)">
+                <p class="cost">$95.00</p>
+                <p>Learn JavaScript</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="SQL" src="pexels-christina-morillo-1181354.jpg" height="150px" onclick="openImg(this)">
+                <p class="cost">$95.00</p>
+                <p>Learn SQL</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="Python" src="pexels-christina-morillo-1181359.jpg" height="150px" onclick="openImg(this)">
+                <p class="cost">$95.00</p>
+                <p>Learn Python</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="PHP" src="pexels-realtoughcandycom-11035390.jpg" height="150px" onclick="openImg(this)">
+                <p class="cost">$95.00</p>
+                <p>Learn PHP</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="React.js" src="pexels-realtoughcandycom-11035471.jpg" height="150px" onclick="openImg(this)">
+                <p class="cost">$95.00</p>
+                <p>Learn React.js</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+            <div class="image">
+                <img alt="C++" src="CPP_Tutorial.png" height="150px" onclick="openImg(this)">
+                <p class="cost">$45.00</p>
+                <p>Learn C++</p>
+                <div class="add">
+                    <h3>Add to Cart</h3>
+                </div>
+            </div>
+        </div>
+        <div id="overlay">
+            <div id="img">
+                <img alt="selectImage" src="" id="sltimage">
+                <h1 onclick="closeImg()">Back</h1>
+            </div>
+        </div> 
+        <!-- Footer of the page -->
+        <div class="footer">
+            <p id="quotes"><span class="comma">“</span>&nbsp;&nbsp;You don’t understand anything until you learn it more than one way.&nbsp;&nbsp;<span class="comma">”</span> </p>
+        </div>
+    </div>
+    <script>
+        function openImg(n){
+            let selectImage = n;
+            let image = selectImage.src.split("/")[4];
+            console.log(image);
+            document.getElementById("sltimage").src = image;
+            document.getElementById("overlay").style.display = "block";
+        }
+        function closeImg(){
+            document.getElementById("overlay").style.display = "none";
+        }
+        function show(){
+            document.getElementById("nav").style.display = "block";
+            document.getElementById("info").style.display = "none";
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("exit").style.display = "block";
+        }
+        function hide(){
+            document.getElementById("nav").style.display = "none";
+            document.getElementById("info").style.display = "block";
+            document.getElementById("menu").style.display = "block";
+            document.getElementById("exit").style.display = "none";
+        }
+    </script>
+</body>
+</html>
